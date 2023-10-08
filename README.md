@@ -3,7 +3,6 @@
 <small>
 
   Info:
-- [¿Cómo puedo participar?](https://github.com/midudev/pruebas-tecnicas#c%C3%B3mo-participar)
 - Basada en la prueba real usada en **Mercado Libre.**
   
 </small>
