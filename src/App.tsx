@@ -1,7 +1,9 @@
+import { MainScreen } from './components/MainScreen'
+
 function App() {
     return (
         <>
-            <div>Hola mundo</div>
+            <MainScreen />
         </>
     )
 }
