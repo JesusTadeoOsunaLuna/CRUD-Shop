@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getProducts } from "../services"
+import { getProductById, getProducts } from "../services"
 import {type Products } from "../types/index.t"
 
 export const useSetData = () => {
@@ -15,4 +15,18 @@ export const useSetData = () => {
 
     return data
     
+}
+
+export const useItemSelected = (id:string | undefined) => {
+    const [product, setProduct] = useState<Products>()
+
+    useEffect(()=> {
+        const getProduct = async()=>{
+            const res = await getProductById(id)
+            setProduct(res)
+            console.log(res)
+        }
+        getProduct()
+    },[])
+    return product
 }

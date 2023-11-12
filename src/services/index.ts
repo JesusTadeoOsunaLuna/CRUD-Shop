@@ -7,3 +7,10 @@ export const getProducts = async() =>{
         return data
     })
 }
+
+export const getProductById = async(id:string | undefined) => {
+    console.log(id)
+    return await fetch(`${ProductsAPI}/${id}`)
+  .then(res=>res.json())
+  .then(data=>{return data})
+}
